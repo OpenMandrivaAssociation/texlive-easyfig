@@ -1,12 +1,12 @@
-# revision 24501
+# revision 26247
 # category Package
 # catalog-ctan /macros/latex/contrib/easyfig
-# catalog-date 2011-11-03 08:30:49 +0100
+# catalog-date 2012-05-07 20:38:03 +0200
 # catalog-license lppl1.3
-# catalog-version 1.0
+# catalog-version 1.1
 Name:		texlive-easyfig
-Version:	1.0
-Release:	2
+Version:	1.1
+Release:	1
 Summary:	Simplifying the use of common figures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
