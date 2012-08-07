@@ -1,11 +1,11 @@
-# revision 26247
+# revision 26424
 # category Package
 # catalog-ctan /macros/latex/contrib/easyfig
-# catalog-date 2012-05-07 20:38:03 +0200
+# catalog-date 2012-05-15 13:39:37 +0200
 # catalog-license lppl1.3
-# catalog-version 1.1
+# catalog-version 1.2
 Name:		texlive-easyfig
-Version:	1.1
+Version:	1.2
 Release:	1
 Summary:	Simplifying the use of common figures
 Group:		Publishing
@@ -24,9 +24,11 @@ The package provides the command \Figure[<key=value>...]{<image
 filename>} to simplify the business of including an image as
 figure in the most common form (centred and with caption and
 label). Caption and label are set using the caption and label
-keys. The label defaults to fig:<image filename> if not used.
-The package uses the author's package adjustbox to centre an
-image and to allow for easy further modifications.
+keys; the label fig:<image filename> is used if none is given.
+If the here key is given, the figure is not 'floated', and the
+user is responsible for placement. The package uses the
+author's package adjustbox to centre an image and to simplify
+further modifications.
 
 %post
     %{_sbindir}/texlive.post
