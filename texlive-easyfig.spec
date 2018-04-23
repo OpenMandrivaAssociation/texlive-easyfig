@@ -5,8 +5,8 @@
 # catalog-license lppl1.3
 # catalog-version 1.2
 Name:		texlive-easyfig
-Version:	1.2
-Release:	9
+Version:	1.2a
+Release:	1
 Summary:	Simplifying the use of common figures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
