@@ -1,19 +1,13 @@
-# revision 26424
-# category Package
-# catalog-ctan /macros/latex/contrib/easyfig
-# catalog-date 2012-05-15 13:39:37 +0200
-# catalog-license lppl1.3
-# catalog-version 1.2
 Name:		texlive-easyfig
-Version:	1.2a
-Release:	3
+Version:	64967
+Release:	1
 Summary:	Simplifying the use of common figures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -31,12 +25,12 @@ author's package adjustbox to centre an image and to simplify
 further modifications.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -49,30 +43,11 @@ further modifications.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Aug 07 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.2-1
-+ Revision: 812243
-- Update to latest release.
-
-* Mon Jun 11 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.1-1
-+ Revision: 804571
-- Update to latest release.
-
-* Wed Jan 04 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.0-2
-+ Revision: 751280
-- Rebuild to reduce used resources
-
-* Thu Nov 10 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.0-1
-+ Revision: 729652
-- texlive-easyfig
-- texlive-easyfig
-
