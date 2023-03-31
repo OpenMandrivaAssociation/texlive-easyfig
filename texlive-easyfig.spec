@@ -1,6 +1,6 @@
 Name:		texlive-easyfig
 Version:	64967
-Release:	1
+Release:	2
 Summary:	Simplifying the use of common figures
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
