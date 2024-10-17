@@ -3,7 +3,7 @@ Version:	64967
 Release:	2
 Summary:	Simplifying the use of common figures
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/easyfig
 License:	LPPL1.3
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/easyfig.doc.r%{version}.tar.xz
